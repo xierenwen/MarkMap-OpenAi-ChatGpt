@@ -16,7 +16,6 @@ const routes = [
     redirect: '/home',  // 重定向到主页
     children: [
       { path: 'home', name: 'Home', meta: { name: '系统首页' }, component: () => import('../views/manager/Home') },
-      { path: 'about', name: 'About', meta: { name: '关于' }, component: () => import('../views/manager/About') },
       ]
   },
 ]
