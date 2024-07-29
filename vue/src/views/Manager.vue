@@ -13,10 +13,7 @@
             <i class="el-icon-s-home"></i>
             <span slot="title">系统首页</span>
           </el-menu-item>
-            <el-menu-item index="/about">
-                <i class="el-icon-s-home"></i>
-                <span slot="title">关于</span>
-            </el-menu-item>
+
         </el-menu>
 
       </el-aside>
@@ -38,11 +35,6 @@
                 <img :src="user.avatar || 'https://wpimg.wallstcn.com/f778738c-e4f8-4870-b634-56703b4acafe.gif?imageView2/1/w/80/h/80'" alt="" style="width: 40px; height: 40px; border-radius: 50%; margin: 0 5px">
                 <span>{{ user.name }}</span>
               </div>
-              <el-dropdown-menu slot="dropdown">
-                <el-dropdown-item @click.native="$router.push('/person')">个人信息</el-dropdown-item>
-                <el-dropdown-item @click.native="$router.push('/password')">修改密码</el-dropdown-item>
-                <el-dropdown-item @click.native="logout">退出登录</el-dropdown-item>
-              </el-dropdown-menu>
             </el-dropdown>
           </div>
 
